@@ -1,25 +1,25 @@
 class Laminapdf < Formula
   desc "Inspect, check, rotate and extract PDFs, with JSON output for scripts and agents"
   homepage "https://laminapdf.com"
-  version "0.2.0-alpha.5"
+  version "0.2.0-alpha.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.5/laminapdf-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "148dea0e6bbc4d7b11c115f1b734df4bc2c34bad8a719d7793fe7d54cb2f24b7"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "729209aa369bba187023c390b78bced0874ee4b658728a49ce862021b052661b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.5/laminapdf-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "f8f77692deae69ec314e56e8b0a6dc6e6eaec183835ed47582dfcd12bde64843"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a4a71a5ed69f05fcb6cf06e76ce117300d7374dda15a354d5925fbc664fb02e4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.5/laminapdf-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c5192066641a82e2c1052cd38b4f1caa93dd63a7b75b789be3cc79ff28f1ca2e"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "09a09ebc1f43611a5a593eb398cbdeb373a359a98a8ccd848f4cb490b4244f62"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.5/laminapdf-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "48e6124f01da5cb0d2e021a483bd0a0bd136be36008eb4e23471e9472a89f104"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5c8d399ca744fc476755c5fe0faebc9b1567856b31d57ded454f0fd762e57c63"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
