@@ -1,25 +1,25 @@
 class Laminapdf < Formula
   desc "Inspect, check, rotate and extract PDFs, with JSON output for scripts and agents"
   homepage "https://laminapdf.com"
-  version "0.2.0-alpha.6"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "729209aa369bba187023c390b78bced0874ee4b658728a49ce862021b052661b"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0/laminapdf-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "680858a2b5698ad791edf25ccaa4c09b9caedb26deaa69fe58d7cd36e64f0c53"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "a4a71a5ed69f05fcb6cf06e76ce117300d7374dda15a354d5925fbc664fb02e4"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0/laminapdf-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "1fe1c0d6272805ac35cac3669937861e1d21a98fed344edbca9eb6c7f511137c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "09a09ebc1f43611a5a593eb398cbdeb373a359a98a8ccd848f4cb490b4244f62"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0/laminapdf-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4a4630a78aac909f86c3d82c381cfdb8aca489be9b3736d9c42d6adb115554a6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0-alpha.6/laminapdf-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5c8d399ca744fc476755c5fe0faebc9b1567856b31d57ded454f0fd762e57c63"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.2.0/laminapdf-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f871bbb31cd1032ac151ee314f835c2c6a4f3cec2c91d314916f53287e8f1805"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
