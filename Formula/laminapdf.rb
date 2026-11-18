@@ -1,25 +1,25 @@
 class Laminapdf < Formula
   desc "Inspect, check, rotate and extract PDFs, with JSON output for scripts and agents"
   homepage "https://laminapdf.com"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.5.0/laminapdf-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "e06ede0454bdf2c29a68216a71af0d7c1298c1f28db4cbfc1f0eda7a5658e20e"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.6.0/laminapdf-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "48789b1f6d2fdc07595ee626b2ae59652f6f1ac3dd3d1b90085565b6de99ff38"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.5.0/laminapdf-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "a26f9a8b65c5b8422b225657444d30f1abb5799c72389d4851a4653c35d5c0b1"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.6.0/laminapdf-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0fbbb94da27f28565c90a78e4dbf1c398c4ce71f824a7692b441b445b97aa984"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.5.0/laminapdf-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f67e5b9dc336520ca9a9fc2f2d1b74879fe0a9b4cef4960a734dbef81eaa48cb"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.6.0/laminapdf-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "882052b7ae6fda5fe8790689035372089f8ab086ea2382cbee0e200d9c134345"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.5.0/laminapdf-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6f1d4a99bad3beb06455375258ab3b6b84c143828539f063e5d7c6a7156c1696"
+      url "https://github.com/laudebugs/laminapdf/releases/download/laminapdf-cli-v0.6.0/laminapdf-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "aabe7da07a19c147a7a29e014926b6c05694e1c4bd1a0fbff9bb11348c3d0523"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
